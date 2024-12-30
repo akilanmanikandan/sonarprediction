@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONAR</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div id="submarine-container">
+        <h1>SONAR</h1>
+        <canvas id="radarCanvas" width="400" height="400"></canvas>
+        <div id="input-container">
+            <input type="text" id="sonar-values" placeholder="input sonar values">
+            <button id="activate-sonar">ACTIVATE</button>
+        </div>
+        <div id="result"></div>
+        <div id="chart-container">
+            <h2>SONAR DATA ANALYSIS</h2>
+            <canvas id="dataChart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="static/radar.js"></script>
+    <script src="static/script.js"></script>
+</body>
+</html>

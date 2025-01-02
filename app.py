@@ -11,6 +11,9 @@ model = joblib.load('project_submarine.pkl')
 def home():
     return render_template('submarine.html')
 
+def handler(request, context):
+    return app(request.environ, start_response)
+
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
